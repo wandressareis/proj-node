@@ -4,5 +4,5 @@ export const database = {
   port: 5432,
   database: "projnode",
   username: "postgres",
-  password: "nico1988"
+  password: "Wreis3105"
 }
