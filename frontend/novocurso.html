@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Curso</title>
+    <link rel="stylesheet" href="css/estilo.css" />  
+  </head>
+
+  <body>
+    <div class="container" id="nome">
+   
+      <a href="index.html">
+        <div class="home-atalho"> 
+          Home
+        </div>
+      </a>
+
+      <div class="form-header-nc"> 
+        <h1>Novo Curso</h1>
+      </div>
+
+      <div class="input-curso"> 
+        <form action="http://localhost:3000/cursos" method="POST">
+
+          <div class="input-nome-curso" id="nome">
+            <label for="nome"> 
+              Curso <input id="nome" type="text" placeholder="Digite o nome do curso" required />
+            </label>
+          </div>
+
+          <div class="carga-horaria" id="ch">
+            <label for="descricao"> 
+              Carga Horária <input id="ch" type="text" placeholder="Digite a carga horária" required />
+            </label>
+          </div>
+
+          <button class="botton-add-curso" onclick="curso.addCurso()">Adicionar</button>
+
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/get-cursos.js"></script>
+</html>

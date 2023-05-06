@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proj Node</title>
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css"/>
   </head>
   <body>
-    <h2>Cursos</h2>
-    <div id="cursos"></div>
-    <div>
-      <button>Adicionar Curso</button>
+    <div class="container">
+      <div class="form-header">
+        <h1>Meus Cursos</h1>
+      </div>
+
+    <div class="curso-adc" id="cursos">
+    </div>
+    
+      <div class="add-curso">
+        <a href="novocurso.html">
+
+        <button class="mais-curso-botton" >
+          <img src="/frontend/img/add_FILL0_wght400_GRAD0_opsz48.svg" alt="Adicionar Curso">
+        </button>
+
+      </div>
     </div>
   </body>
   <script src="js/get-cursos.js"></script>

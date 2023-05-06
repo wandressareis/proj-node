@@ -8,6 +8,11 @@ export class CursoController {
     return cursos;
   }
 
+  async get(id) {
+    const curso = await this.curso.findByPk(id);
+    return curso;
+  }
+
   async adicionar(cursoDTO) {
     try {
       console.log(cursoDTO);
@@ -16,4 +21,12 @@ export class CursoController {
       console.log(error);
     }
   }
+  async excluir(id) {
+    await this.curso.destroy({ where: { id:id } });
+  }
+
+  async atualizar(id, cursoDTO) {
+    await this.curso.update(cursoDTO, { where: { id:id } });
+  }
+
 }
